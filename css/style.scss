@@ -1,0 +1,53 @@
+// variables for the header/navbar
+
+$navButton: #010101;
+$navButtonColor: #aba9a9;
+$navButtonActive: #797979;
+$navButtonActiveColor: #000000;
+$navButtonHover: #aba9a9;
+$navHeaderBG: #464646;
+$navHeaderFont: #aba9a9;
+
+nav{
+	background-color: $navHeaderBG;
+	color: $navHeaderFont;
+	border-radius: 0px;
+}
+
+.nav{
+	background-color: $navButton;
+	color: $navHeaderFont;
+	width: 100%;
+	margin-left: -30px;
+	padding-left: 30px;
+
+	& li > a {
+		color: $navButtonColor;
+
+		&:hover{
+			background-color: $navButtonHover;
+			color: $navButtonActiveColor;
+		}
+	}
+	& > li.active{
+		a{
+			background-color: $navButtonActive;
+			color: $navButtonActiveColor;
+		}
+	}
+}
+
+
+// Variables for body background
+$bodyBackground: #797979;
+$bodyFont: #aba9a9;
+$containerBackground: #464646;
+
+body {
+	background-color: $bodyBackground;
+	padding-top: 130px;
+	.container{
+		background-color: $containerBackground;
+		color: $bodyFont;
+	}
+}
