@@ -14,7 +14,7 @@
 	<!-- Navigation -->
 	<nav class="navbar navbar-fixed-top">
 		<!-- Logo / Nav header-->
-		<div class="container-fluid">
+		<div class="container">
 			<div class="navbar-header">
 				<h1>Scene Clearly LLC</h1>
 				<h3>Window Cleaners, Grand Junction, CO
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<!-- The main navbar -->
-		<div class="container-fluid">
+		<div class="container" id="nav-container">
 			<div class="collapse navbar-collapse" id="sceneClearlyNavbar">
 				<ul class="nav navbar-nav">
 					<li role="presentation" class="active"><a href="#home">Home</a></li>
@@ -40,45 +40,20 @@
 	
 	<!-- Main page content -->
 	<div class="container">
-		<div id="home">
-			<!-- Carousel for images -->
-			<div id="carousel-scenery" class="carousel side" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="carousel-scenery" data-slide-to="0" class="active"></li>
-					<li data-target="carousel-scenery" data-slide-to="1"></li>
-				</ol>
-				
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<div class="text-center">
-							<img src="images/mountains.jpg" alt="Mountains which will be seen more clearly"/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="text-center">
-							<img src="images/shoreline.jpg" alt="A shoreline which you can see more clearly through your window"/>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-scenery" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-scenery" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-			
+		<div id="home" class="section top-section">
 			<!-- First couple paragraphs -->
-			<h2>About Us</h2>
-			<p>SCENE CLEARLY LLC is a window cleaning company specializing in making your day a little brighter.</p>
-			<p>We take care of window cleaning services so that you don't have to worry about it. We perform residential and commercial work. We are able to work either on a per time basis or by setting up a schedule so your windows don't become unbearable.</p>
+			<div class="row">
+				<div class="col-sm-8">
+					<h2>About Us</h2>
+					<p>SCENE CLEARLY LLC is a window cleaning company specializing in making your day a little brighter.</p>
+					<p>We take care of window cleaning services so that you don't have to worry about it. We perform residential and commercial work. We are able to work either on a per time basis or by setting up a schedule so your windows don't become unbearable.</p>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/shoreline.jpg" class="img-responsive" alt="A shoreline which you can see more clearly through your window"/>
+				</div>
+			</div>
 		</div>
-		<div id="history">
+		<div id="history" class="section">
 			<h2>History</h2>
 			<div class="row">
 				<div class="col-sm-4">
@@ -89,39 +64,33 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div id="prices">
-					<h2>Prices</h2>
-					<div class="row">
-						<div class="col-sm-4">
-							<img class="img-responsive" src="images/house.jpg"/>
-						</div>
-						<div class="col-sm-8">
-							<p>Due to the fact that all houses and buildings are different, we have to see the house or the building to give a more precise price.  Many times your name address and phone number is all that is needed to get the price process in action.  Also information on any animals in the yard is helpful.  We are not afraid of dogs but just like to be warned of their presence.</p>
-						</div>
-					</div>
+		<div id="prices" class="section">
+			<h2>Prices</h2>
+			<div class="row">
+				<div class="col-sm-8">
+					<p>Due to the fact that all houses and buildings are different, we have to see the house or the building to give a more precise price.  Many times your name address and phone number is all that is needed to get the price process in action.  Also information on any animals in the yard is helpful.  We are not afraid of dogs but just like to be warned of their presence.</p>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<div id="where">
-					<h2>Where do we work?</h2>
-					<div class="row">
-						<div class="col-sm-8">
-							<p>Grand Junction, Fruita, Palisade Area in Colorado.</p>
-							<p>Since we are a small, reliable operation, we have to stay local.</p>
-						</div>
-						<div class="col-sm-4">
-							<img src="images/citySquare.jpg" class="img-responsive" alt="A City Square in Europe"/>
-						</div>
-					</div>
+				<div class="col-sm-4">
+					<img class="img-responsive" src="images/house.jpg"/>
 				</div>
 			</div>
 		</div>
-		<div id="contact">
+		<div id="where" class="section">
+			<h2>Where do we work?</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="images/citySquare.jpg" class="img-responsive" alt="A City Square in Europe"/>
+				</div>
+				<div class="col-sm-8">
+					<p>Grand Junction, Fruita, Palisade Area in Colorado.</p>
+					<p>Since we are a small, reliable operation, we have to stay local.</p>
+				</div>
+			</div>
+		</div>
+		<div id="contact" class="section bottom-section">
 			<h2>Contact Us</h2>
 			<div class="row">
-				<div class="col-sm-8">
+				<div class="col-sm-6">
 					<p><a href="tel:+1-970-242-1264">1-970-242-1264 Message</a></p>
 					<p><a href="mailto:sceneclearly@netzero.net">sceneclearly@netzero.net</a></p>
 					
@@ -145,7 +114,7 @@
 						<div class="form-group">
 							<div class="checkbox">
 								<label>
-									<input type="checkbox"/> We have pets
+									<input type="checkbox"/> We have animals
 								</label>
 							</div>
 						</div>
@@ -159,12 +128,29 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<img src="images/lake.jpg" class="img-responsive" alt="A lake that you can see clearly"/>
 				</div>
 			</div>
 		</div>
 		<footer class="text-center">Designed and developed by Andrew Laino</footer>
+		<script>
+			$('.navbar a[href*="#"]:not([href="#"])').click(function() {
+				$(".nav li.active").removeClass("active");
+				$(".dropdown-menu li.active").removeClass("active");
+				$(this).parent().addClass("active");
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html, body').animate({
+					  scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				  }
+				}
+			});
+		</script>
 	</div>
 </body>
 </html>

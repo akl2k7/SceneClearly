@@ -1,3 +1,5 @@
+// Fonts
+@import 'https://fonts.googleapis.com/css?family=Exo+2|Reem+Kufi';
 // variables for the header/navbar
 
 $navButton: #010101;
@@ -12,14 +14,23 @@ nav{
 	background-color: $navHeaderBG;
 	color: $navHeaderFont;
 	border-radius: 0px;
+	font-family: "Reem Kufi", sans-serif;
+	margin-left: -40px;
+	margin-right: -40px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+
+	.container{
+		background-color: $navHeaderBG !important;
+	}
+
 }
 
 .nav{
 	background-color: $navButton;
 	color: $navHeaderFont;
 	width: 100%;
-	margin-left: -30px;
-	padding-left: 30px;
 
 	& li > a {
 		color: $navButtonColor;
@@ -45,16 +56,29 @@ $containerBackground: #2a2a2a;
 
 body {
 	background-color: $bodyBackground;
-	padding-top: 130px;
+	font-family: 'Exo 2', sans-serif;
 	.container{
 		background-color: $containerBackground;
 		color: $bodyFont;
+		padding-bottom: 10px;
 	}
 }
 
 // Sections of the body
 
+.section{
+	padding-top: 170px;
+	margin-bottom: -170px;
+}
 
+.top-section{
+	margin-bottom: -150px;
+}
+
+.bottom-section{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
 
 // The Footer
 $footerColor: #666666;

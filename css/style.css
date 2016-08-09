@@ -1,14 +1,20 @@
+@import "https://fonts.googleapis.com/css?family=Exo+2|Reem+Kufi";
 nav {
   background-color: #464646;
   color: #aba9a9;
-  border-radius: 0px; }
+  border-radius: 0px;
+  font-family: "Reem Kufi", sans-serif;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-left: 40px;
+  padding-right: 40px; }
+  nav .container {
+    background-color: #464646 !important; }
 
 .nav {
   background-color: #010101;
   color: #aba9a9;
-  width: 100%;
-  margin-left: -30px;
-  padding-left: 30px; }
+  width: 100%; }
   .nav li > a {
     color: #aba9a9; }
     .nav li > a:hover {
@@ -20,10 +26,22 @@ nav {
 
 body {
   background-color: #797979;
-  padding-top: 130px; }
+  font-family: 'Exo 2', sans-serif; }
   body .container {
     background-color: #2a2a2a;
-    color: #aba9a9; }
+    color: #aba9a9;
+    padding-bottom: 10px; }
+
+.section {
+  padding-top: 170px;
+  margin-bottom: -170px; }
+
+.top-section {
+  margin-bottom: -150px; }
+
+.bottom-section {
+  margin-bottom: 10px;
+  padding-bottom: 10px; }
 
 footer {
   background-color: #000000;
