@@ -41,7 +41,7 @@ nav{
 // Variables for body background
 $bodyBackground: #797979;
 $bodyFont: #aba9a9;
-$containerBackground: #464646;
+$containerBackground: #2a2a2a;
 
 body {
 	background-color: $bodyBackground;
@@ -50,4 +50,23 @@ body {
 		background-color: $containerBackground;
 		color: $bodyFont;
 	}
+}
+
+// The Footer
+$footerColor: #666666;
+$footerBackground: #000000;
+$footerBorder: #494949;
+
+footer {
+	background-color: $footerBackground;
+	color: $footerColor;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: $footerBorder;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
