@@ -124,6 +124,40 @@
 				<div class="col-sm-8">
 					<p><a href="tel:+1-970-242-1264">1-970-242-1264 Message</a></p>
 					<p><a href="mailto:sceneclearly@netzero.net">sceneclearly@netzero.net</a></p>
+					
+					<form action="email.php" method="POST">
+						<div class="form-group">
+							<label>Name </label>
+							<input type="text" class="form-control" id="name" placeholder="Name" required/>
+						</div>
+						<div class="form-group">
+							<label>Address </label>
+							<input type="text" class="form-control" id="address" placeholder="Address" required/>
+						</div>
+						<div class="form-group">
+							<label>Email </label>
+							<input type="email" class="form-control" id="email" placeholder="email@example.com" required/>
+						</div>
+						<div class="form-group">
+							<label>Phone Number </label>
+							<input type="tel" class="form-control" id="phoneNumber" placeholder="(970)555-5555" required/>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"/> We have pets
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Additional Information</label>
+							<textarea class="form-control" id="additionalNotes" placeholder="Additional information">
+							</textarea>
+						</div>
+						<div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</div>
+					</form>
 				</div>
 				<div class="col-sm-4">
 					<img src="images/lake.jpg" class="img-responsive" alt="A lake that you can see clearly"/>
