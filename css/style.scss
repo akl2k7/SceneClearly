@@ -19,12 +19,12 @@ nav{
 	margin-right: -40px;
 	padding-left: 40px;
 	padding-right: 40px;
+	padding-bottom: 10px;
 
 
 	.container{
 		background-color: $navHeaderBG !important;
 	}
-
 }
 
 .nav{
@@ -98,4 +98,33 @@ footer {
 	margin-bottom: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+@media screen and (max-width : 768px){
+	nav{
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+
+		.navbar-header{
+			padding-left: 20px;
+			padding-bottom: -5px;
+			margin-bottom: -5px;
+		}
+
+		.container{
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+		}
+		
+		.navbar-nav{
+			margin-right: 0px;
+			padding-right: 0px;
+			margin-left: 0px;
+			padding-left: 0px;
+		}
+	}
+
+	form {
+		padding-bottom: 10px;
+	}
 }
